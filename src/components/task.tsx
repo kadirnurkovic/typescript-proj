@@ -7,7 +7,7 @@ interface Props {
 
 const TDTask = ({task}: Props) => {
     return (
-        <div>TASK</div>
+        <div>{task?.taskName}</div>
     )
 };
 

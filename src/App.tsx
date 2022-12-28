@@ -29,7 +29,7 @@ const App: FC = () => {
         </div>
         <div className="todo">
             {todo.map((task: InterfaceTask, key: number) => (
-              <Task key={key}/> 
+              <Task key={key} task={task}/> 
             ))}
         </div>
       </div>
