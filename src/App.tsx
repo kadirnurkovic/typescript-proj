@@ -20,6 +20,13 @@ const App: FC = () => {
       console.log(task)
       console.log(todo);
   }
+
+  const completeTask = (taskDelete: string): void => {
+      setTodo(todo.filter((task) => {
+        return task.taskName !== taskDelete;
+      }))
+  }
+
   return (
     <div className="App">
       <div className="header">
@@ -29,7 +36,7 @@ const App: FC = () => {
         </div>
         <div className="todo">
             {todo.map((task: InterfaceTask, key: number) => (
-              <Task key={key} task={task}/> 
+              <Task key={key} task={task} completeTask={completeTask}/> 
             ))}
         </div>
       </div>
