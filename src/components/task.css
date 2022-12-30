@@ -1,0 +1,19 @@
+.taskClass{
+    background-color: rgb(214, 147, 129);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 20vh;
+    border: solid black 1px;
+}
+.btn{
+    border-radius: 15px;
+    background-color: rgb(168, 116, 32);
+    border: none;
+    color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

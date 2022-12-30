@@ -1,5 +1,6 @@
 import React from "react";
 import { InterfaceTask } from "./interfaces";
+import "./task.css";
 
 interface Props {
   task: InterfaceTask;
@@ -8,10 +9,11 @@ interface Props {
 
 const TDTask = ({ task, completeTask }: Props) => {
   return (
-    <div>
+    <div className="taskClass">
       <div>{task.taskName}</div>
       <div>
         <button
+          className="btn"
           onClick={() => {
             completeTask(task.taskName);
           }}
