@@ -13,7 +13,11 @@
     border: none;
     color: white;
     font-size: 15px;
-
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: 0.25s;
+    background-color: rgb(164, 0, 0);
 }
